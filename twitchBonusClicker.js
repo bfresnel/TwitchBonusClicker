@@ -1,7 +1,7 @@
 // Script part
 setInterval(function() {
     clickOnButtonIfBonusButtonIsAvailable();
-}, 305000);
+}, 150000);
 
 // function part
 function clickOnButtonIfBonusButtonIsAvailable(){
