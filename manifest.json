@@ -1,0 +1,12 @@
+{
+    "name": "Twitch Bonus Clicker",
+    "version": "0.0.21",
+    "description": "Auto-click on bonus icon for Twitch",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+          "matches": ["https://*.twitch.tv/*"],
+          "js": ["twitchBonusClicker.js"]
+        }
+    ]
+  }
