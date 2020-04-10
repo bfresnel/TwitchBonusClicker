@@ -1,31 +1,28 @@
-// Script part
-var intervalId;
+var inputContainer;
+const mutationConfig = {
+    childList: true,
+    attributes: true,
+    subtree: true,
+};
 
-
-var inputContainer = document.getElementsByClassName('community-points-summary tw-align-items-center tw-flex tw-full-height');
-// child : class="tw-full-height tw-relative tw-z-above"
-//child : tw-transition tw-transition--duration-long tw-transition--enter-done tw-transition__fade tw-transition__fade--enter-done
-//child : tw-transition tw-transition--duration-long tw-transition--enter-done tw-transition__slide-over-left tw-transition__slide-over-left--enter-done
-//child : tw-inline-flex tw-relative tw-tooltip-wrapper
-// child : Button : tw-button tw-button--success tw-interactive
 window.addEventListener('load', (event) => {
-    console.log(inputContainer);
+    inputContainer = document.getElementsByClassName("tw-full-height tw-relative tw-z-above");
+    var buttonObserver = new MutationObserver(callback);
+    buttonObserver.observe(inputContainer[0], mutationConfig);
 });
 
-/* intervalId = setInterval(function() {
-    clickOnButtonIfBonusButtonIsAvailable();
-}, 60000);
-
-// function part
-function clickOnButtonIfBonusButtonIsAvailable(){
-    var bonusButton = document.getElementsByClassName('tw-button tw-button--success tw-interactive');
-    if (bonusButton.length === 0){
-        console.log('[TwitchButtonClicker]' + displayCurrentTime() + ' -  Bonus button is not available for the moment');
-    } else {
-        console.log(displayCurrentTime() + ' - [TwitchButtonClicker] Bonus button is available !');
-        bonusButton[0].click();
+function callback(mutationRecord, observer){
+    for (var i = 0, length = mutationRecord.length; i< length; i++){
+        var mutation = mutationRecord[i];
+        if (mutation.type === 'childList'){
+            var buttonInput = document.getElementsByClassName("tw-button tw-button--success tw-interactive");
+            if (buttonInput.length > 0){
+                console.log(displayCurrentTime() + ' - [TwitchButtonClicker] Bonus button is available !');
+                buttonInput[0].click();
+            }
+        }
     }
-} */
+}
 
 function displayCurrentTime() {
     var currentDate = new Date();
