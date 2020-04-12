@@ -11,7 +11,11 @@ window.addEventListener('load', (event) => {
 
     inputContainer = document.getElementsByClassName("tw-full-height tw-relative tw-z-above");
     var buttonObserver = new MutationObserver(callback);
-    buttonObserver.observe(inputContainer[0], mutationConfig);
+
+    // Issue #6 : In case we are on twitch but not on a stream page
+    if (inputContainer.length > 0){
+        buttonObserver.observe(inputContainer[0], mutationConfig);
+    }
 });
 
 function callback(mutationRecord, observer){
