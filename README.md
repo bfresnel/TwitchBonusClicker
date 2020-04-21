@@ -5,20 +5,23 @@
 
 > Auto-clicker for twitch community point button
 
-## Author
+## How To install
 
-👤 **bfresnel**
+🚀 Getting Started
+Download the repository
+Using git
 
-* Website: https://www.github.com/bfresnel
-* Github: [@bfresnel](https://github.com/bfresnel)
+  git clone https://github.com/henry-ns/twitch-farm.git
+or download the zip file and extract then
 
-## 🤝 Contributing
+Enter on chrome extensions
+  chrome://extensions/
+Enable development mode on chrome extensions page
+Developer mode
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://www.github.com/bfresnel/TwitchBonusClicker/issues). 
+Load unpacked extension, select the current folder
+Developer mode
 
-## Show your support
+If everything went as it should, you should see this:
 
-Give a ⭐️ if this project helped you!
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+Developer mode
