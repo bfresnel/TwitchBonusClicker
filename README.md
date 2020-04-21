@@ -7,21 +7,19 @@
 
 ## How To install
 
-🚀 Getting Started
-Download the repository
+1.	**Download the repository**
+  
 Using git
-
-  git clone https://github.com/henry-ns/twitch-farm.git
+  ```sh
+    git clone https://github.com/bfresnel/twitch-farm.git
+  ```
 or download the zip file and extract then
 
-Enter on chrome extensions
-  chrome://extensions/
-Enable development mode on chrome extensions page
-Developer mode
+2. Enter on chrome extensions
+  ```
+    chrome://extensions/
+  ```
 
-Load unpacked extension, select the current folder
-Developer mode
+3. Enable development mode on chrome extensions page
 
-If everything went as it should, you should see this:
-
-Developer mode
+4. Load unpacked extension, select the current folder where you downloaded the files
