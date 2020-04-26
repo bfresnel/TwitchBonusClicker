@@ -11,7 +11,7 @@
   
 Using git
   ```sh
-    git clone https://github.com/bfresnel/twitch-farm.git
+    git clone https://github.com/bfresnel/TwitchBonusClicker.git
   ```
 or download the zip file and extract then
 
