@@ -30,4 +30,4 @@ or download the zip file and extract then
 
 5. If the extension is correctly installed, you should see this :
 
-  ![Installation](assets/readme/extension-Installation.png)
+  ![Installation](assets/readme/extension-installation.png)
