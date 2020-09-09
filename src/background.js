@@ -52,7 +52,7 @@ function init() {
     }
 
     clickOnBonusButton();
-    inputContainer = document.getElementsByClassName("tw-full-height tw-relative tw-z-above");
+    inputContainer = document.getElementsByClassName("tw-button tw-button--success tw-interactive");
     buttonObserver = new MutationObserver(callback);
     if (inputContainer.length > 0) {
         buttonObserver.observe(inputContainer[0], mutationConfig);

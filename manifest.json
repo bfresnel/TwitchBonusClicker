@@ -1,6 +1,6 @@
 {
     "name": "Twitch Bonus Clicker",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Auto-click on channel point icon for Twitch",
     "manifest_version": 2,
     "icons": {
