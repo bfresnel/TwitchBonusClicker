@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to TwitchBonusClicker 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.2-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-2.0.0-blue.svg?cacheSeconds=2592000" />
 </p>
 
 > TwitchBonusClicker is a google chrome extension that allow you to peacefully farm your favorite stream channel point.
