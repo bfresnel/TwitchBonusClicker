@@ -27,7 +27,8 @@ const mutationConfig = {
 eventUrlChange = document.createEvent("HTMLEvents");
 eventUrlChange.initEvent("onUrlChange", true, true);
 eventUrlChange.eventName = "onUrlChange";
-setInterval(refreshCurrentUrl,3000);
+setInterval(refreshCurrentUrl, 3000);
+setInterval(clickOnBonusButton, 3300);
 
 // adding Event when the page is fully loaded
 window.addEventListener('load', (event) => {
@@ -47,7 +48,7 @@ window.addEventListener('onUrlChange', (event) => {
 function init() {
     // if the buttonObserver already exist but was
     // for an another page
-    if (buttonObserver){
+    if (buttonObserver) {
         buttonObserver.disconnect();
     }
 
@@ -62,10 +63,10 @@ function init() {
 /**
  * Callback for the mutationObserver
  */
-function callback(mutationRecord, observer){
-    for (var i = 0, length = mutationRecord.length; i< length; i++){
+function callback(mutationRecord, observer) {
+    for (var i = 0, length = mutationRecord.length; i < length; i++) {
         var mutation = mutationRecord[i];
-        if (mutation.type === 'childList'){
+        if (mutation.type === 'childList') {
             clickOnBonusButton();
         }
     }
@@ -76,7 +77,7 @@ function callback(mutationRecord, observer){
  * We cannot count on 'load' event for every channel
  */
 function refreshCurrentUrl() {
-    if (currentUrl !== document.location.href){
+    if (currentUrl !== document.location.href) {
         currentUrl = document.location.href;
         document.dispatchEvent(eventUrlChange);
     }
